@@ -2,20 +2,22 @@
 # vi: set ft=ruby :
  
 Vagrant::Config.run do |config|
-  config.vm.box = "precise64"
+  config.vm.box = "lucid64"
   config.vm.box_url = "http://files.vagrantup.com/lucid64.box"
   
+  # Upgrade Chef for ark to work
   config.vm.provision :shell, :inline => "gem install chef --version 11.4.2 --no-rdoc --no-ri --conservative"
-  config.vm.provision :shell, :inline => "apt-get update"
-  # Otherwise java install will fail with missing dependencies
 
+  # Refresh package list
+  config.vm.provision :shell, :inline => "apt-get update"
+  
   config.vm.provision :chef_solo do |chef|
     chef.log_level = :debug
     # Config.
     chef.json = {
       :maven => {
         :version => "3",
-        :setup_bin => false
+        :setup_bin => true
       }
     }
     
