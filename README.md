@@ -1,6 +1,6 @@
 # vagrant-mule #
 
-A Vagrant setup script to get Mule up and running quickly.
+A Vagrant setup script to get Mule up and running quickly using Chef.
 
 ## Usage ##
 
@@ -15,3 +15,7 @@ A Vagrant setup script to get Mule up and running quickly.
 3. Start Vagrant.
 
         vagrant up
+
+Licence
+----------------------------
+This project is distributed under [Apache 2 licence](http://www.apache.org/licenses/LICENSE-2.0.html). 
