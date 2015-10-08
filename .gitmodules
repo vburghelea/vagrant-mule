@@ -4,9 +4,6 @@
 [submodule "cookbooks/java"]
 	path = cookbooks/java
 	url = https://github.com/opscode-cookbooks/java.git
-[submodule "cookbooks/mule"]
-	path = cookbooks/mule
-	url = https://github.com/ryandcarter/mule-cookbook
 [submodule "cookbooks/git"]
 	path = cookbooks/git
 	url = https://github.com/opscode-cookbooks/git
@@ -34,3 +31,6 @@
 [submodule "cookbooks/yum"]
 	path = cookbooks/yum
 	url = https://github.com/opscode-cookbooks/yum.git
+[submodule "cookbooks/mule"]
+	path = cookbooks/mule
+	url = git@github.com:vburghelea/mule-cookbook.git
