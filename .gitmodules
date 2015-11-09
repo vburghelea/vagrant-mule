@@ -34,3 +34,6 @@
 [submodule "cookbooks/mule"]
 	path = cookbooks/mule
 	url = https://github.com/shopkeep/mule-cookbook.git
+[submodule "cookbooks/archive"]
+	path = cookbooks/archive
+	url = https://github.com/realityforge/chef-archive
