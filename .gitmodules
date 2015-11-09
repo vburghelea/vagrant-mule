@@ -31,3 +31,6 @@
 [submodule "cookbooks/yum"]
 	path = cookbooks/yum
 	url = https://github.com/opscode-cookbooks/yum.git
+[submodule "cookbooks/mule"]
+	path = cookbooks/mule
+	url = https://github.com/shopkeep/mule-cookbook.git
